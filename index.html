@@ -7,20 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
         
-        .font-calligraphy { 
-            font-family: 'Playfair Display', serif; 
-            font-style: italic;
-        }
-        .font-serif-title {
-            font-family: 'Playfair Display', serif;
+        .font-cormorant { 
+            font-family: 'Cormorant Garamond', serif; 
         }
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
 
         /* Luxury Facade Background Overlay */
         .hero-facade {
-            background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.75), rgba(15, 15, 15, 0.95)), 
+            background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.78), rgba(15, 15, 15, 0.96)), 
                               url('facade.jpg');
             background-size: cover;
             background-position: center;
@@ -28,14 +24,14 @@
 
         /* Sochos Mountainous Landscape Background */
         .sochos-bg {
-            background-image: linear-gradient(to right, rgba(15, 15, 15, 0.93), rgba(15, 15, 15, 0.78)), 
+            background-image: linear-gradient(to right, rgba(15, 15, 15, 0.94), rgba(15, 15, 15, 0.80)), 
                               url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1920&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         }
 
         .red-glow {
-            box-shadow: 0 0 30px rgba(220, 38, 38, 0.3);
+            box-shadow: 0 0 30px rgba(185, 28, 28, 0.35);
         }
     </style>
 </head>
@@ -45,10 +41,10 @@
     <nav class="sticky top-0 z-50 bg-[#0F0F0F]/90 backdrop-blur-md border-b border-zinc-800/80">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             
-            <!-- Aesthetic Calligraphic Logo -->
+            <!-- Ultra Elegant Premium Logo -->
             <div class="flex items-center gap-3">
-                <span class="text-3xl font-bold tracking-wide text-red-600 font-calligraphy">Τα Σοχινά</span>
-                <span class="hidden sm:inline-block text-[10px] uppercase tracking-widest bg-red-950/40 text-red-400 border border-red-800/40 px-2.5 py-1 rounded-full">Estd. 1999</span>
+                <span class="text-3xl md:text-4xl font-semibold tracking-wider text-red-600 font-cormorant">ΤΑ ΣΟΧΙΝΑ</span>
+                <span class="hidden sm:inline-block text-[9px] uppercase tracking-widest bg-red-950/40 text-red-400 border border-red-800/40 px-2.5 py-1 rounded-full font-medium">Estd. 1999</span>
             </div>
             
             <div class="flex items-center gap-4 md:gap-6">
@@ -84,9 +80,9 @@
                 <i class="fas fa-external-link-alt text-[10px] text-red-400/70 ml-1"></i>
             </a>
 
-            <h1 class="text-4xl md:text-7xl font-bold font-serif-title tracking-tight text-white leading-tight">
+            <h1 class="text-5xl md:text-8xl font-medium font-cormorant tracking-tight text-white leading-tight">
                 Η Τέχνη του Καλού Κρέατος <br>
-                <span class="font-calligraphy text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-red-500 to-red-700">& Ντελικατέσεν</span>
+                <span class="font-cormorant italic text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-red-500 to-red-700">& Ντελικατέσεν</span>
             </h1>
 
             <p class="text-zinc-300 text-base md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
@@ -94,7 +90,6 @@
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
-                <!-- Mobile Call CTA -->
                 <a href="tel:6945441263" class="w-full sm:w-auto bg-red-700 hover:bg-red-600 text-white font-semibold text-sm px-8 py-4 rounded-full transition-all duration-300 shadow-xl red-glow flex items-center justify-center gap-3">
                     <i class="fas fa-truck text-red-200"></i>
                     <span>Παραγγελία για Διανομή (6945 441 263)</span>
@@ -113,7 +108,7 @@
     <section class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center space-y-3 mb-16">
             <span class="text-red-500 font-semibold text-xs tracking-widest uppercase">Gourmet Selection</span>
-            <h2 class="text-3xl md:text-5xl font-bold font-serif-title text-white">Ποιότητα Χωρίς Συμβιβασμούς</h2>
+            <h2 class="text-4xl md:text-6xl font-medium font-cormorant text-white">Ποιότητα Χωρίς Συμβιβασμούς</h2>
             <p class="text-zinc-400 text-sm max-w-md mx-auto">Φρέσκα ντόπια προϊόντα καθημερινά στη βιτρίνα μας</p>
         </div>
 
@@ -125,7 +120,7 @@
                 </div>
                 <div class="p-6 relative z-10 -mt-12">
                     <span class="text-red-500 text-xs font-semibold uppercase tracking-wider">Premium Cuts</span>
-                    <h3 class="text-2xl font-bold font-calligraphy text-white mt-1">Εκλεκτά Κρέατα</h3>
+                    <h3 class="text-3xl font-medium font-cormorant text-white mt-1">Εκλεκτά Κρέατα</h3>
                     <p class="text-zinc-400 text-xs leading-relaxed mt-2">
                         Μοσχάρι, χοιρινό, αμνοερίφια και κοτόπουλο εξαιρετικής ποιότητας, καθαρισμένα με απόλυτη λεπτομέρεια.
                     </p>
@@ -139,7 +134,7 @@
                 </div>
                 <div class="p-6 relative z-10 -mt-12">
                     <span class="text-red-500 text-xs font-semibold uppercase tracking-wider">Handmade Daily</span>
-                    <h3 class="text-2xl font-bold font-calligraphy text-white mt-1">Σπιτικές Παρασκευές</h3>
+                    <h3 class="text-3xl font-medium font-cormorant text-white mt-1">Σπιτικές Παρασκευές</h3>
                     <p class="text-zinc-400 text-xs leading-relaxed mt-2">
                         Τα διάσημα χειροποίητα μπιφτέκια μας, σουβλάκια, ρολά και έτοιμα γεύματα για ψήσιμο.
                     </p>
@@ -153,7 +148,7 @@
                 </div>
                 <div class="p-6 relative z-10 -mt-12">
                     <span class="text-red-500 text-xs font-semibold uppercase tracking-wider">Fine Delicatessen</span>
-                    <h3 class="text-2xl font-bold font-calligraphy text-white mt-1">Ντελικατέσεν</h3>
+                    <h3 class="text-3xl font-medium font-cormorant text-white mt-1">Ντελικατέσεν</h3>
                     <p class="text-zinc-400 text-xs leading-relaxed mt-2">
                         Παραδοσιακά τυριά, χειροποίητες αλοιφές, μπαχαρικά και ζυμαρικά που δεν βρίσκεις στα super market.
                     </p>
@@ -172,12 +167,12 @@
                     <span>Η Καταγωγή Μας</span>
                 </div>
 
-                <h2 class="text-3xl md:text-5xl font-bold font-serif-title text-white leading-tight">
+                <h2 class="text-4xl md:text-6xl font-medium font-cormorant text-white leading-tight">
                     Από τα Πλούσια Βοσκοτόπια του Σοχού
                 </h2>
 
                 <p class="text-zinc-300 text-sm md:text-base leading-relaxed font-light">
-                    Τα προϊόντα του κρεοπωλείου <strong class="text-red-400 font-semibold font-calligraphy text-lg">“Τα Σοχινά”</strong> είναι μερικά από τα 8.000 βοοειδή και 50.000 γιδοπρόβατα που εκτρέφονται στον Σοχό. 
+                    Τα προϊόντα του κρεοπωλείου <strong class="text-red-400 font-semibold font-cormorant text-xl">“Τα Σοχινά”</strong> είναι μερικά από τα 8.000 βοοειδή και 50.000 γιδοπρόβατα που εκτρέφονται στον Σοχό. 
                 </p>
 
                 <p class="text-zinc-300 text-sm md:text-base leading-relaxed font-light">
@@ -199,7 +194,7 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
                 <div>
                     <span class="text-red-500 font-semibold text-xs tracking-widest uppercase">Google Reviews</span>
-                    <h2 class="text-3xl font-bold font-serif-title text-white mt-1">Η Εμπειρία των Πελατών Μας</h2>
+                    <h2 class="text-4xl font-medium font-cormorant text-white mt-1">Η Εμπειρία των Πελατών Μας</h2>
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=ΚΡΕΑΤΑΓΟΡΑ+ΤΑ+ΣΟΧΙΝΑ+ΘΕΡΜΗ" target="_blank" class="flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 px-4 py-2.5 rounded-xl border border-zinc-800 transition-colors w-fit">
                     <span class="text-red-500 font-bold text-lg">★ 4.8</span>
@@ -234,7 +229,7 @@
             <div class="grid md:grid-cols-2 gap-10 items-center relative z-10">
                 <div class="space-y-6">
                     <span class="text-red-500 text-xs font-semibold uppercase tracking-widest">Επισκεφθείτε Μας</span>
-                    <h3 class="text-3xl font-bold font-calligraphy text-white">Κρεαταγορά Τα Σοχινά</h3>
+                    <h3 class="text-4xl font-medium font-cormorant text-white">Κρεαταγορά Τα Σοχινά</h3>
                     
                     <div class="space-y-3 text-sm text-zinc-300">
                         <p class="flex items-center gap-3">
