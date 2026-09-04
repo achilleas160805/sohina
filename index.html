@@ -7,38 +7,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
         
         .font-cinzel { font-family: 'Cinzel', serif; }
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
 
-        /* Cinematic Dark Vignette & Parallax */
-        .hero-bg {
-            background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.95)), 
-                              url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1920&auto=format&fit=crop');
+        /* Luxury Facade Background Overlay */
+        .hero-facade {
+            background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.70), rgba(15, 15, 15, 0.95)), 
+                              url('facade.jpg');
             background-size: cover;
             background-position: center;
         }
 
         .gold-glow {
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.25);
         }
     </style>
 </head>
 <body class="bg-[#0F0F0F] text-zinc-200 antialiased selection:bg-amber-600 selection:text-white">
 
-    <!-- Sticky Navigation -->
+    <!-- Sticky Navigation Bar -->
     <nav class="sticky top-0 z-50 bg-[#0F0F0F]/90 backdrop-blur-md border-b border-zinc-800/80">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <span class="text-2xl font-bold tracking-widest text-amber-500 font-cinzel">ΤΑ ΣΟΧΙΝΑ</span>
-                <span class="hidden sm:inline-block text-[10px] uppercase tracking-widest bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2.5 py-1 rounded-full">Artisan Butcher</span>
+                <span class="hidden sm:inline-block text-[10px] uppercase tracking-widest bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2.5 py-1 rounded-full">Estd. 1999</span>
             </div>
             
             <div class="flex items-center gap-6">
-                <a href="https://maps.google.com/?q=Κολοκοτρώνη+45+Θέρμη" target="_blank" class="hidden md:flex items-center gap-2 text-xs text-zinc-400 hover:text-amber-400 transition-colors">
+                <!-- Direct Google Maps Review Link -->
+                <a href="https://www.google.com/maps/search/?api=1&query=ΚΡΕΑΤΑΓΟΡΑ+ΤΑ+ΣΟΧΙΝΑ+ΘΕΡΜΗ" target="_blank" class="hidden md:flex items-center gap-2 text-xs text-zinc-300 hover:text-amber-400 transition-colors">
                     <i class="fas fa-star text-amber-500"></i>
-                    <span class="font-semibold text-zinc-200">4.8</span> (75+ Google Reviews)
+                    <span class="font-bold text-white">4.8</span>
+                    <span class="text-zinc-400">(75+ Αξιολογήσεις Google)</span>
                 </a>
                 <a href="tel:2310465881" class="bg-amber-600 hover:bg-amber-500 text-white font-medium text-xs md:text-sm px-5 py-2.5 rounded-full transition-all duration-300 shadow-lg shadow-amber-900/30 flex items-center gap-2">
                     <i class="fas fa-phone-alt text-xs"></i> 
@@ -48,14 +50,15 @@
         </div>
     </nav>
 
-    <!-- Hero Section (Cinematic Atmosphere) -->
-    <section class="hero-bg min-h-[85vh] flex items-center justify-center relative px-6 py-20 border-b border-zinc-800">
+    <!-- Hero Section with Luxury Store Facade Background -->
+    <section class="hero-facade min-h-[90vh] flex items-center justify-center relative px-6 py-24 border-b border-zinc-800">
         <div class="max-w-4xl mx-auto text-center space-y-8 relative z-10">
             
-            <div class="inline-flex items-center gap-2 bg-zinc-900/80 border border-amber-500/30 px-4 py-1.5 rounded-full backdrop-blur-md">
+            <a href="https://www.google.com/maps/search/?api=1&query=ΚΡΕΑΤΑΓΟΡΑ+ΤΑ+ΣΟΧΙΝΑ+ΘΕΡΜΗ" target="_blank" class="inline-flex items-center gap-2 bg-zinc-950/80 hover:bg-zinc-900 border border-amber-500/40 px-4 py-1.5 rounded-full backdrop-blur-md transition-all">
                 <i class="fas fa-map-marker-alt text-amber-500 text-xs"></i>
-                <span class="text-xs uppercase tracking-widest text-zinc-300 font-medium">Κολοκοτρώνη 45, Θέρμη</span>
-            </div>
+                <span class="text-xs uppercase tracking-widest text-zinc-200 font-medium">Κολοκοτρώνη 45, Θέρμη</span>
+                <i class="fas fa-external-link-alt text-[10px] text-amber-500/70 ml-1"></i>
+            </a>
 
             <h1 class="text-4xl md:text-7xl font-bold font-cinzel tracking-tight text-white leading-tight">
                 Η Τέχνη του Καλού Κρέατος <br>
@@ -63,7 +66,7 @@
             </h1>
 
             <p class="text-zinc-300 text-base md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
-                Εκλεκτές κοπές, σχολαστικά καθαρισμένα κρέατα, χειροποίητες παρασκευές και σπάνια γκουρμέ προϊόντα από τοπικούς παραγωγούς.
+                Παράδοση από το 1999. Εκλεκτές κοπές, σχολαστικά καθαρισμένα κρέατα, χειροποίητες παρασκευές και γκουρμέ προϊόντα Σοχού.
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
@@ -71,29 +74,28 @@
                     <i class="fas fa-truck text-amber-200"></i>
                     <span>Παραγγελία για Διανομή</span>
                 </a>
-                <a href="#gallery" class="w-full sm:w-auto bg-zinc-900/80 hover:bg-zinc-800 text-zinc-300 border border-zinc-700 font-medium text-sm px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md">
-                    <span>Περιήγηση στη Συλλογή</span>
-                    <i class="fas fa-arrow-down text-xs text-amber-500"></i>
+                
+                <!-- Direct Direct Link to Google Maps Business Listing -->
+                <a href="https://www.google.com/maps/search/?api=1&query=ΚΡΕΑΤΑΓΟΡΑ+ΤΑ+ΣΟΧΙΝΑ+ΘΕΡΜΗ" target="_blank" class="w-full sm:w-auto bg-zinc-900/90 hover:bg-zinc-800 text-zinc-200 border border-amber-500/30 font-medium text-sm px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md">
+                    <i class="fas fa-location-arrow text-amber-500 text-xs"></i>
+                    <span>Πλοήγηση στο Μαγαζί (Google Maps)</span>
                 </a>
             </div>
 
         </div>
     </section>
 
-    <!-- Visual Experience / Real Showcase Gallery -->
-    <section id="gallery" class="py-24 px-6 max-w-7xl mx-auto">
+    <!-- Visual Experience / Showcase Grid -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center space-y-3 mb-16">
             <span class="text-amber-500 font-semibold text-xs tracking-widest uppercase">Gourmet Selection</span>
             <h2 class="text-3xl md:text-5xl font-bold font-cinzel text-white">Ποιότητα Χωρίς Συμβιβασμούς</h2>
-            <p class="text-zinc-400 text-sm max-w-md mx-auto">Φρέσκα προϊόντα καθημερινά στη βιτρίνα μας</p>
+            <p class="text-zinc-400 text-sm max-w-md mx-auto">Φρέσκα ντόπια προϊόντα καθημερινά στη βιτρίνα μας</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-            
-            <!-- Card 1 -->
             <div class="group relative bg-zinc-900/50 rounded-2xl overflow-hidden border border-zinc-800 hover:border-amber-500/50 transition-all duration-500">
                 <div class="h-72 overflow-hidden relative">
-                    <!-- Αντικατάστησε το src με δική σου φωτογραφία π.χ. src="meats.jpg" -->
                     <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=800&auto=format&fit=crop" alt="Εκλεκτά Κρέατα" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-transparent to-transparent"></div>
                 </div>
@@ -101,15 +103,13 @@
                     <span class="text-amber-500 text-xs font-semibold uppercase tracking-wider">Premium Cuts</span>
                     <h3 class="text-xl font-bold font-cinzel text-white mt-1">Εκλεκτά Κρέατα</h3>
                     <p class="text-zinc-400 text-xs leading-relaxed mt-2">
-                        Μοσχάρι, χοιρινό και κοτόπουλο εξαιρετικής ποιότητας, καθαρισμένα με απόλυτη λεπτομέρεια.
+                        Μοσχάρι, χοιρινό, αμνοερίφια και κοτόπουλο εξαιρετικής ποιότητας, καθαρισμένα με απόλυτη λεπτομέρεια.
                     </p>
                 </div>
             </div>
 
-            <!-- Card 2 -->
             <div class="group relative bg-zinc-900/50 rounded-2xl overflow-hidden border border-zinc-800 hover:border-amber-500/50 transition-all duration-500">
                 <div class="h-72 overflow-hidden relative">
-                    <!-- Αντικατάστησε το src με δική σου φωτογραφία π.χ. src="burgers.jpg" -->
                     <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=800&auto=format&fit=crop" alt="Σπιτικές Παρασκευές" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-transparent to-transparent"></div>
                 </div>
@@ -117,15 +117,13 @@
                     <span class="text-amber-500 text-xs font-semibold uppercase tracking-wider">Handmade Daily</span>
                     <h3 class="text-xl font-bold font-cinzel text-white mt-1">Σπιτικές Παρασκευές</h3>
                     <p class="text-zinc-400 text-xs leading-relaxed mt-2">
-                        Τα διάσημα χειροποίητα μπιφτέκια μας, ρολά και έτοιμα γεύματα για ψήσιμο.
+                        Τα διάσημα χειροποίητα μπιφτέκια μας, σουβλάκια, ρολά και έτοιμα γεύματα για ψήσιμο.
                     </p>
                 </div>
             </div>
 
-            <!-- Card 3 -->
             <div class="group relative bg-zinc-900/50 rounded-2xl overflow-hidden border border-zinc-800 hover:border-amber-500/50 transition-all duration-500">
                 <div class="h-72 overflow-hidden relative">
-                    <!-- Αντικατάστησε το src με δική σου φωτογραφία π.χ. src="deli.jpg" -->
                     <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=800&auto=format&fit=crop" alt="Gourmet Ντελικατέσεν" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-transparent to-transparent"></div>
                 </div>
@@ -137,11 +135,10 @@
                     </p>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- Social Proof (Cinematic Testimonials) -->
+    <!-- Social Proof (Direct Link to Google Map Business Listing) -->
     <section class="py-20 bg-zinc-950 border-y border-zinc-900">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
@@ -149,10 +146,11 @@
                     <span class="text-amber-500 font-semibold text-xs tracking-widest uppercase">Google Reviews</span>
                     <h2 class="text-3xl font-bold font-cinzel text-white mt-1">Η Εμπειρία των Πελατών Μας</h2>
                 </div>
-                <div class="flex items-center gap-2 bg-zinc-900 px-4 py-2 rounded-xl border border-zinc-800 w-fit">
+                <a href="https://www.google.com/maps/search/?api=1&query=ΚΡΕΑΤΑΓΟΡΑ+ΤΑ+ΣΟΧΙΝΑ+ΘΕΡΜΗ" target="_blank" class="flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 px-4 py-2.5 rounded-xl border border-zinc-800 transition-colors w-fit">
                     <span class="text-amber-400 font-bold text-lg">★ 4.8</span>
-                    <span class="text-zinc-400 text-xs">/ 5.0 από 75+ Αξιολογήσεις</span>
-                </div>
+                    <span class="text-zinc-300 text-xs">Δείτε όλες τις 75+ αξιολογήσεις στο Google Maps</span>
+                    <i class="fas fa-chevron-right text-xs text-amber-500 ml-1"></i>
+                </a>
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
@@ -175,13 +173,13 @@
         </div>
     </section>
 
-    <!-- Location & Contact -->
+    <!-- Location & Direct Map Button Section -->
     <section class="py-20 px-6 max-w-5xl mx-auto">
         <div class="bg-gradient-to-br from-zinc-900 via-zinc-900 to-black p-8 md:p-12 rounded-3xl border border-zinc-800 shadow-2xl relative overflow-hidden">
             <div class="grid md:grid-cols-2 gap-10 items-center relative z-10">
                 <div class="space-y-6">
-                    <span class="text-amber-500 text-xs font-semibold uppercase tracking-widest">Επικοινωνία</span>
-                    <h3 class="text-3xl font-bold font-cinzel text-white">Σας Περιμένουμε στη Θέρμη</h3>
+                    <span class="text-amber-500 text-xs font-semibold uppercase tracking-widest">Επισκεφθείτε Μας</span>
+                    <h3 class="text-3xl font-bold font-cinzel text-white">Κρεαταγορά Τα Σοχινά</h3>
                     
                     <div class="space-y-3 text-sm text-zinc-300">
                         <p class="flex items-center gap-3">
@@ -194,9 +192,14 @@
                         </p>
                         <p class="flex items-center gap-3">
                             <span class="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500"><i class="fas fa-motorcycle"></i></span>
-                            <span>Διανομή Κατ' Οίκον</span>
+                            <span>Διανομή Κατ' Οίκον στη Θέρμη</span>
                         </p>
                     </div>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=ΚΡΕΑΤΑΓΟΡΑ+ΤΑ+ΣΟΧΙΝΑ+ΘΕΡΜΗ" target="_blank" class="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs px-6 py-3 rounded-full transition-all">
+                        <i class="fas fa-directions"></i>
+                        <span>Άνοιγμα Χάρτη & Οδηγίες Πλοήγησης</span>
+                    </a>
                 </div>
 
                 <div class="bg-zinc-950/80 p-6 rounded-2xl border border-zinc-800 space-y-4">
@@ -204,15 +207,15 @@
                     <p class="text-xs text-zinc-400 leading-relaxed">
                         Ετοιμάζουμε την παραγγελία σας με τις κοπές της επιλογής σας για παραλαβή από το κατάστημα ή διανομή.
                     </p>
-                    <a href="tel:2310465881" class="block text-center bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs py-3 rounded-xl transition-colors">
-                        Καλέστε Τώρα
+                    <a href="tel:2310465881" class="block text-center bg-zinc-800 hover:bg-zinc-700 text-amber-400 border border-amber-500/30 font-semibold text-xs py-3 rounded-xl transition-colors">
+                        <i class="fas fa-phone-alt mr-2"></i>231 046 5881
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Minimal Footer -->
+    <!-- Footer -->
     <footer class="py-8 border-t border-zinc-900 text-center text-xs text-zinc-600">
         <p>© 2026 Κρεαταγορά Τα Σοχινά • Θέρμη, Θεσσαλονίκη</p>
     </footer>
