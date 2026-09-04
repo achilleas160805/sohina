@@ -1,145 +1,219 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="el" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Κρεαταγορά Τα Σοχινά | Artisan Meat & Delicatessen</title>
+    <title>Κρεαταγορά Τα Σοχινά | Fine Meats & Delicatessen</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        
+        .font-cinzel { font-family: 'Cinzel', serif; }
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .serif-title { font-family: 'Merriweather', serif; }
+
+        /* Cinematic Dark Vignette & Parallax */
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.95)), 
+                              url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .gold-glow {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+        }
     </style>
 </head>
-<body class="bg-[#F5F5F0] text-zinc-800 antialiased">
+<body class="bg-[#0F0F0F] text-zinc-200 antialiased selection:bg-amber-600 selection:text-white">
 
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-[#1C1917]/95 backdrop-blur-md text-white border-b border-zinc-800">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <span class="text-2xl font-bold tracking-wider text-amber-500 serif-title">ΤΑ ΣΟΧΙΝΑ</span>
-                <span class="hidden md:inline-block text-xs bg-zinc-800 px-2.5 py-1 rounded-full text-zinc-300">Κρεαταγορά & Delicatessen</span>
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#0F0F0F]/90 backdrop-blur-md border-b border-zinc-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl font-bold tracking-widest text-amber-500 font-cinzel">ΤΑ ΣΟΧΙΝΑ</span>
+                <span class="hidden sm:inline-block text-[10px] uppercase tracking-widest bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2.5 py-1 rounded-full">Artisan Butcher</span>
             </div>
-            <div class="flex items-center space-x-6">
-                <div class="hidden md:flex items-center text-amber-400 text-sm font-semibold">
-                    <i class="fas fa-star mr-1"></i> 4.8 <span class="text-zinc-400 font-normal ml-1">(75+ Google Reviews)</span>
-                </div>
-                <a href="tel:2310465881" class="bg-amber-600 hover:bg-amber-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-all flex items-center">
-                    <i class="fas fa-phone-alt mr-2"></i> 231 046 5881
+            
+            <div class="flex items-center gap-6">
+                <a href="https://maps.google.com/?q=Κολοκοτρώνη+45+Θέρμη" target="_blank" class="hidden md:flex items-center gap-2 text-xs text-zinc-400 hover:text-amber-400 transition-colors">
+                    <i class="fas fa-star text-amber-500"></i>
+                    <span class="font-semibold text-zinc-200">4.8</span> (75+ Google Reviews)
+                </a>
+                <a href="tel:2310465881" class="bg-amber-600 hover:bg-amber-500 text-white font-medium text-xs md:text-sm px-5 py-2.5 rounded-full transition-all duration-300 shadow-lg shadow-amber-900/30 flex items-center gap-2">
+                    <i class="fas fa-phone-alt text-xs"></i> 
+                    <span>231 046 5881</span>
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative bg-[#1C1917] text-white py-20 px-4">
-        <div class="max-w-4xl mx-auto text-center space-y-6">
-            <span class="inline-block text-amber-500 text-sm font-semibold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
-                Θέρμη • Κολοκοτρώνη 45
-            </span>
-            <h1 class="text-4xl md:text-6xl font-bold serif-title leading-tight">
-                Η Τέχνη του Καλού Κρέατος & Εκλεκτά Προϊόντα
+    <!-- Hero Section (Cinematic Atmosphere) -->
+    <section class="hero-bg min-h-[85vh] flex items-center justify-center relative px-6 py-20 border-b border-zinc-800">
+        <div class="max-w-4xl mx-auto text-center space-y-8 relative z-10">
+            
+            <div class="inline-flex items-center gap-2 bg-zinc-900/80 border border-amber-500/30 px-4 py-1.5 rounded-full backdrop-blur-md">
+                <i class="fas fa-map-marker-alt text-amber-500 text-xs"></i>
+                <span class="text-xs uppercase tracking-widest text-zinc-300 font-medium">Κολοκοτρώνη 45, Θέρμη</span>
+            </div>
+
+            <h1 class="text-4xl md:text-7xl font-bold font-cinzel tracking-tight text-white leading-tight">
+                Η Τέχνη του Καλού Κρέατος <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">& Ντελικατέσεν</span>
             </h1>
-            <p class="text-zinc-300 text-lg md:text-xl max-w-2xl mx-auto font-light">
-                Κοπές υψηλής ποιότητας, σπιτικές παρασκευές και επιλεγμένα προϊόντα ντελικατέσεν. Με δυνατότητα διανομής στην πόρτα σας.
+
+            <p class="text-zinc-300 text-base md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
+                Εκλεκτές κοπές, σχολαστικά καθαρισμένα κρέατα, χειροποίητες παρασκευές και σπάνια γκουρμέ προϊόντα από τοπικούς παραγωγούς.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-                <a href="tel:2310465881" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3.5 rounded-lg shadow-lg transition-all">
-                    Παραγγελία για Διανομή
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
+                <a href="tel:2310465881" class="w-full sm:w-auto bg-amber-600 hover:bg-amber-500 text-white font-semibold text-sm px-8 py-4 rounded-full transition-all duration-300 shadow-xl gold-glow flex items-center justify-center gap-3">
+                    <i class="fas fa-truck text-amber-200"></i>
+                    <span>Παραγγελία για Διανομή</span>
                 </a>
-                <a href="https://maps.google.com/?q=Κολοκοτρώνη+45+Θέρμη" target="_blank" class="bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-semibold px-8 py-3.5 rounded-lg transition-all border border-zinc-700">
-                    Οδηγίες Χάρτη
+                <a href="#gallery" class="w-full sm:w-auto bg-zinc-900/80 hover:bg-zinc-800 text-zinc-300 border border-zinc-700 font-medium text-sm px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md">
+                    <span>Περιήγηση στη Συλλογή</span>
+                    <i class="fas fa-arrow-down text-xs text-amber-500"></i>
                 </a>
             </div>
+
         </div>
     </section>
 
-    <!-- Highlights Section -->
-    <section class="py-16 px-4 max-w-6xl mx-auto">
+    <!-- Visual Experience / Real Showcase Gallery -->
+    <section id="gallery" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center space-y-3 mb-16">
+            <span class="text-amber-500 font-semibold text-xs tracking-widest uppercase">Gourmet Selection</span>
+            <h2 class="text-3xl md:text-5xl font-bold font-cinzel text-white">Ποιότητα Χωρίς Συμβιβασμούς</h2>
+            <p class="text-zinc-400 text-sm max-w-md mx-auto">Φρέσκα προϊόντα καθημερινά στη βιτρίνα μας</p>
+        </div>
+
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-zinc-200">
-                <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-600 mb-6 text-xl">
-                    <i class="fas fa-drumstick-bite"></i>
+            
+            <!-- Card 1 -->
+            <div class="group relative bg-zinc-900/50 rounded-2xl overflow-hidden border border-zinc-800 hover:border-amber-500/50 transition-all duration-500">
+                <div class="h-72 overflow-hidden relative">
+                    <!-- Αντικατάστησε το src με δική σου φωτογραφία π.χ. src="meats.jpg" -->
+                    <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=800&auto=format&fit=crop" alt="Εκλεκτά Κρέατα" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-transparent to-transparent"></div>
                 </div>
-                <h3 class="text-xl font-bold mb-2">Εκλεκτά Κρέατα</h3>
-                <p class="text-zinc-600 text-sm leading-relaxed">
-                    Μοσχάρι, χοιρινό και κοτόπουλο εξαιρετικής ποιότητας, καθαρισμένα με σχολαστική λεπτομέρεια και φροντίδα.
-                </p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-zinc-200">
-                <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-600 mb-6 text-xl">
-                    <i class="fas fa-hamburger"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Σπιτικές Παρασκευές</h3>
-                <p class="text-zinc-600 text-sm leading-relaxed">
-                    Χειροποίητα μπιφτέκια, παρασκευάσματα έτοιμα για ψήσιμο και παραδοσιακές συνταγές με αγνά υλικά.
-                </p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-zinc-200">
-                <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-600 mb-6 text-xl">
-                    <i class="fas fa-cheese"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Gourmet Ντελικατέσεν</h3>
-                <p class="text-zinc-600 text-sm leading-relaxed">
-                    Επιλεγμένα παραδοσιακά τυριά, αλοιφές, εξαιρετικά μπαχαρικά και ζυμαρικά που ξεχωρίζουν.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof Section -->
-    <section class="py-16 bg-zinc-100 border-y border-zinc-200">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="text-amber-600 font-bold text-sm tracking-widest uppercase">Αξιολογήσεις Πελατών</span>
-                <h2 class="text-3xl font-bold serif-title mt-2">Τι Λένε για Εμάς στο Google</h2>
-            </div>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-zinc-200">
-                    <div class="text-amber-400 mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="text-zinc-700 text-sm italic mb-4">"Δεν έχω μείνει απογοητευμένος ούτε μια φορά. Σωστά και με λεπτομέρεια καθαρισμένο και φρεσκότατο κρέας."</p>
-                    <span class="font-bold text-xs text-zinc-500">— A.K. (Local Guide)</span>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-zinc-200">
-                    <div class="text-amber-400 mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="text-zinc-700 text-sm italic mb-4">"Υπέροχα όλα τα προϊόντα τους! Άριστοι επαγγελματίες, φιλικοί με τους πελάτες τους!"</p>
-                    <span class="font-bold text-xs text-zinc-500">— Χρυσούλα Κ.</span>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-zinc-200">
-                    <div class="text-amber-400 mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="text-zinc-700 text-sm italic mb-4">"Πολύ καλά ποιοτικά κρέατα. Υπάρχουν ακόμα τυριά, αλοιφές, μπαχαρικά και ζυμαρικά που δεν τα βρίσκεις στο super market."</p>
-                    <span class="font-bold text-xs text-zinc-500">— Ευαγγελία Α.</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Info & Contact Section -->
-    <section class="py-16 px-4 max-w-4xl mx-auto">
-        <div class="bg-[#1C1917] text-white rounded-2xl p-8 md:p-12 shadow-xl border border-zinc-800">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div class="space-y-4">
-                    <h3 class="text-2xl font-bold serif-title text-amber-500">Επισκεφθείτε Μας</h3>
-                    <p class="text-zinc-300 text-sm"><i class="fas fa-map-marker-alt text-amber-500 mr-2"></i> Κολοκοτρώνη 45, Θέρμη 570 01</p>
-                    <p class="text-zinc-300 text-sm"><i class="fas fa-phone text-amber-500 mr-2"></i> 231 046 5881</p>
-                    <p class="text-zinc-300 text-sm"><i class="fas fa-truck text-amber-500 mr-2"></i> Υπηρεσία Διανομής Κατ' Οίκον</p>
-                </div>
-                <div class="bg-zinc-800/80 p-6 rounded-xl border border-zinc-700">
-                    <h4 class="font-semibold mb-3 text-amber-400">Πληροφορίες & Εξυπηρέτηση</h4>
-                    <p class="text-xs text-zinc-300 leading-relaxed mb-4">
-                        Εξυπηρετούμε την περιοχή της Θέρμης με φρέσκα προϊόντα καθημερινά. Καλέστε μας για τηλεφωνικές παραγγελίες και διανομή.
+                <div class="p-6 relative z-10 -mt-12">
+                    <span class="text-amber-500 text-xs font-semibold uppercase tracking-wider">Premium Cuts</span>
+                    <h3 class="text-xl font-bold font-cinzel text-white mt-1">Εκλεκτά Κρέατα</h3>
+                    <p class="text-zinc-400 text-xs leading-relaxed mt-2">
+                        Μοσχάρι, χοιρινό και κοτόπουλο εξαιρετικής ποιότητας, καθαρισμένα με απόλυτη λεπτομέρεια.
                     </p>
-                    <a href="tel:2310465881" class="block text-center bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2.5 rounded-lg text-sm transition-all">
-                        Κλήση για Παραγγελία
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group relative bg-zinc-900/50 rounded-2xl overflow-hidden border border-zinc-800 hover:border-amber-500/50 transition-all duration-500">
+                <div class="h-72 overflow-hidden relative">
+                    <!-- Αντικατάστησε το src με δική σου φωτογραφία π.χ. src="burgers.jpg" -->
+                    <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=800&auto=format&fit=crop" alt="Σπιτικές Παρασκευές" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6 relative z-10 -mt-12">
+                    <span class="text-amber-500 text-xs font-semibold uppercase tracking-wider">Handmade Daily</span>
+                    <h3 class="text-xl font-bold font-cinzel text-white mt-1">Σπιτικές Παρασκευές</h3>
+                    <p class="text-zinc-400 text-xs leading-relaxed mt-2">
+                        Τα διάσημα χειροποίητα μπιφτέκια μας, ρολά και έτοιμα γεύματα για ψήσιμο.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group relative bg-zinc-900/50 rounded-2xl overflow-hidden border border-zinc-800 hover:border-amber-500/50 transition-all duration-500">
+                <div class="h-72 overflow-hidden relative">
+                    <!-- Αντικατάστησε το src με δική σου φωτογραφία π.χ. src="deli.jpg" -->
+                    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=800&auto=format&fit=crop" alt="Gourmet Ντελικατέσεν" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6 relative z-10 -mt-12">
+                    <span class="text-amber-500 text-xs font-semibold uppercase tracking-wider">Fine Delicatessen</span>
+                    <h3 class="text-xl font-bold font-cinzel text-white mt-1">Ντελικατέσεν</h3>
+                    <p class="text-zinc-400 text-xs leading-relaxed mt-2">
+                        Παραδοσιακά τυριά, χειροποίητες αλοιφές, μπαχαρικά και ζυμαρικά που δεν βρίσκεις στα super market.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Social Proof (Cinematic Testimonials) -->
+    <section class="py-20 bg-zinc-950 border-y border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-amber-500 font-semibold text-xs tracking-widest uppercase">Google Reviews</span>
+                    <h2 class="text-3xl font-bold font-cinzel text-white mt-1">Η Εμπειρία των Πελατών Μας</h2>
+                </div>
+                <div class="flex items-center gap-2 bg-zinc-900 px-4 py-2 rounded-xl border border-zinc-800 w-fit">
+                    <span class="text-amber-400 font-bold text-lg">★ 4.8</span>
+                    <span class="text-zinc-400 text-xs">/ 5.0 από 75+ Αξιολογήσεις</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-zinc-900/60 p-6 rounded-xl border border-zinc-800/80 space-y-4">
+                    <div class="text-amber-400 text-xs flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-zinc-300 text-xs leading-relaxed italic">"Δεν έχω μείνει απογοητευμένος ούτε μια φορά. Σωστά και με λεπτομέρεια καθαρισμένο και φρεσκότατο κρέας."</p>
+                    <span class="block text-[11px] font-semibold text-zinc-500">— A.K. (Local Guide)</span>
+                </div>
+                <div class="bg-zinc-900/60 p-6 rounded-xl border border-zinc-800/80 space-y-4">
+                    <div class="text-amber-400 text-xs flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-zinc-300 text-xs leading-relaxed italic">"Υπέροχα όλα τα προϊόντα τους! Άριστοι επαγγελματίες, φιλικοί με τους πελάτες τους!"</p>
+                    <span class="block text-[11px] font-semibold text-zinc-500">— Χρυσούλα Κ.</span>
+                </div>
+                <div class="bg-zinc-900/60 p-6 rounded-xl border border-zinc-800/80 space-y-4">
+                    <div class="text-amber-400 text-xs flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-zinc-300 text-xs leading-relaxed italic">"Πολύ καλά ποιοτικά κρέατα. Υπάρχουν ακόμα τυριά, αλοιφές, μπαχαρικά και ζυμαρικά που δεν τα βρίσκεις στο super market."</p>
+                    <span class="block text-[11px] font-semibold text-zinc-500">— Ευαγγελία Α.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="bg-gradient-to-br from-zinc-900 via-zinc-900 to-black p-8 md:p-12 rounded-3xl border border-zinc-800 shadow-2xl relative overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-10 items-center relative z-10">
+                <div class="space-y-6">
+                    <span class="text-amber-500 text-xs font-semibold uppercase tracking-widest">Επικοινωνία</span>
+                    <h3 class="text-3xl font-bold font-cinzel text-white">Σας Περιμένουμε στη Θέρμη</h3>
+                    
+                    <div class="space-y-3 text-sm text-zinc-300">
+                        <p class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500"><i class="fas fa-map-marker-alt"></i></span>
+                            <span>Κολοκοτρώνη 45, Θέρμη 570 01</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500"><i class="fas fa-phone"></i></span>
+                            <span>231 046 5881</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500"><i class="fas fa-motorcycle"></i></span>
+                            <span>Διανομή Κατ' Οίκον</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-zinc-950/80 p-6 rounded-2xl border border-zinc-800 space-y-4">
+                    <h4 class="text-white font-semibold text-sm">Τηλεφωνικές Παραγγελίες</h4>
+                    <p class="text-xs text-zinc-400 leading-relaxed">
+                        Ετοιμάζουμε την παραγγελία σας με τις κοπές της επιλογής σας για παραλαβή από το κατάστημα ή διανομή.
+                    </p>
+                    <a href="tel:2310465881" class="block text-center bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs py-3 rounded-xl transition-colors">
+                        Καλέστε Τώρα
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-zinc-950 text-zinc-500 text-xs py-8 text-center border-t border-zinc-900">
+    <!-- Minimal Footer -->
+    <footer class="py-8 border-t border-zinc-900 text-center text-xs text-zinc-600">
         <p>© 2026 Κρεαταγορά Τα Σοχινά • Θέρμη, Θεσσαλονίκη</p>
     </footer>
 
